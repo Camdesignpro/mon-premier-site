@@ -1,0 +1,28 @@
+{
+  "Light": {
+    "surface-default": "{semantic.background-default}",
+    "surface-subtle": "{semantic.background-subtle}",
+    "surface-brand": "{semantic.brand-primary}",
+    "text-default": "{semantic.content-default}",
+    "text-subtle": "{semantic.content-subtle}",
+    "text-on-brand": "{color.white}",
+    "icon-default": "{semantic.content-default}",
+    "icon-subtle": "{semantic.content-subtle}",
+    "icon-brand": "{semantic.brand-primary}",
+    "border-default": "{semantic.border-default}",
+    "border-brand": "{semantic.brand-primary}"
+  },
+  "Dark": {
+    "surface-default": "{color.gray.900}",
+    "surface-subtle": "{color.gray.700}",
+    "surface-brand": "{semantic.brand-primary}",
+    "text-default": "{color.white}",
+    "text-subtle": "{color.gray.100}",
+    "text-on-brand": "{color.white}",
+    "icon-default": "{color.white}",
+    "icon-subtle": "{color.gray.100}",
+    "icon-brand": "{semantic.brand-primary}",
+    "border-default": "{color.gray.700}",
+    "border-brand": "{semantic.brand-primary}"
+  }
+}

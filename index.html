@@ -1,11 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mon premier site</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asteria Studio — Landing Page</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="module" src="js/tokens.js"></script>
 </head>
 <body>
-    <h1>Hello World 👋 </h1>
-    <p>Mon premier site local.</p>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          Asteria Studio<br />
+          <span class="muted" style="font-weight: 500; font-size: .9rem;">Agence digitale fictive</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#resultats">Résultats</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-secondary" href="#contact">Parler à l'équipe</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Design system • branding • produit digital</div>
+          <h1>Une landing page claire pour présenter une entreprise moderne.</h1>
+          <p class="lead">
+            Asteria Studio aide les équipes à concevoir des interfaces élégantes, cohérentes et faciles à faire évoluer.
+            Cette page utilise une structure de variables inspirée de tes collections primitives, semantic et mapped.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">Demander un devis</a>
+            <a class="btn btn-secondary" href="#services">Découvrir les services</a>
+          </div>
+          <div class="meta-row">
+            <div><strong>+42</strong> projets livrés</div>
+            <div><strong>12 ans</strong> d'expérience</div>
+            <div><strong>99%</strong> de satisfaction</div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Résumé d'activité">
+          <div class="card-title">
+            <strong>Vue d’ensemble</strong>
+            <span id="brand-mode-label">Brand A / Light</span>
+          </div>
+          <p class="big-number">92%</p>
+          <p class="small-copy">des équipes gagnent en cohérence visuelle après la mise en place de variables et de tokens.</p>
+
+          <div class="mini-grid">
+            <div class="mini">
+              <strong>18</strong>
+              <span class="muted">composants alignés</span>
+            </div>
+            <div class="mini">
+              <strong>3</strong>
+              <span class="muted">marchés ciblés</span>
+            </div>
+            <div class="mini">
+              <strong>2</strong>
+              <span class="muted">thèmes actifs</span>
+            </div>
+            <div class="mini">
+              <strong>1</strong>
+              <span class="muted">source de vérité</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Des services simples, lisibles, réutilisables</h2>
+          </div>
+          <p>Cette mise en page peut servir de base à une page vitrine, un site d'agence, ou une page d'introduction pour un produit SaaS.</p>
+        </div>
+
+        <div class="cards">
+          <article class="feature">
+            <div class="icon">✦</div>
+            <h3>Stratégie de marque</h3>
+            <p>Définir une identité claire, des messages courts et une hiérarchie visuelle cohérente.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">◌</div>
+            <h3>UI / Design system</h3>
+            <p>Construire des variables et composants utilisables partout dans le produit et la documentation.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">↗</div>
+            <h3>Landing pages</h3>
+            <p>Créer des pages rapides à lire, optimisées pour la conversion et faciles à maintenir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resultats">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Pourquoi cette structure marche bien</h2>
+          </div>
+          <p>Les couleurs, l'espacement et les rayons sont pilotés par des variables, ce qui simplifie les futures évolutions.</p>
+        </div>
+
+        <div class="cards">
+          <article class="feature">
+            <h3>Primitives</h3>
+            <p>Les valeurs brutes : bleu, gris, blanc, noir. Elles servent de base technique.</p>
+          </article>
+          <article class="feature">
+            <h3>Semantic</h3>
+            <p>Les alias métier : brand, text, background, border. Elles portent le sens.</p>
+          </article>
+          <article class="feature">
+            <h3>Mapped</h3>
+            <p>Les usages concrets : surface, icon, text, border. Elles parlent aux composants.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2 style="margin: 0 0 var(--space-3); font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -0.04em;">Prêt à transformer tes variables en vraie page web ?</h2>
+            <p style="margin: 0; max-width: 60ch;">Tu peux reprendre cette base pour un site fictif, puis remplacer les couleurs et textes par ceux de ton entreprise ou de ton produit.</p>
+          </div>
+          <div>
+            <a class="btn btn-secondary" style="background: var(--primitive-color-white); color: var(--semantic-color-brand-primary); border-color: transparent;" href="#top">Voir le haut de page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2026 Asteria Studio — page démo</div>
+      <div>Variables design • HTML • CSS</div>
+    </div>
+  </footer>
 </body>
 </html>
